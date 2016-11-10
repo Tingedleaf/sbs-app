@@ -5,3 +5,6 @@ packages
 node_modules
 *.suo
 StyleCop.Cache
+*.Cache
+*.cache
+test/unit/StyleCop.Cache

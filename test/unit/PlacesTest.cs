@@ -27,7 +27,7 @@ namespace Yojowa.StopByStop.UnitTests
             var places = PlacesLoader.GetGeoPlacesFromEmbeddedFile().OrderByDescending(gp => gp.Population).ToArray();
 
             Assert.AreEqual<string>("New York City", places.First().ShortName);
-            Assert.AreEqual<string>("4071427,0--7400597,0", places.First().Location.ShortKey);
+            Assert.AreEqual<string>("40.7--74.0", places.First().Location.ShortKey);
             Assert.AreEqual<string>("St Marys", places.Last().ShortName);
         }
 
